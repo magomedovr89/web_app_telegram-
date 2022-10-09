@@ -1,6 +1,9 @@
 import './App.css';
 // import {useEffect} from "react";
 import {useTelegram} from "./hooks/useTelegram";
+import Header from "./components/Header/Header";
+import ProductItem from "./components/ProductItem/ProductItem";
+import ProductList from "./components/ProductList/ProductList";
 
 
 function App() {
@@ -11,12 +14,10 @@ function App() {
     // }, [])
 
 
-
     return (
         <div className='App'>
-            <button onClick={onToogleButton}>
-                toogle
-            </button>
+            <Header />
+            <ProductList />
         </div>
     );
 }
