@@ -4,7 +4,13 @@ import {useTelegram} from "./hooks/useTelegram";
 
 
 function App() {
-    const {tg, onToogleButton} = useTelegram()
+    const {onToogleButton} = useTelegram()
+
+    // useEffect(() => {
+    //     tg.ready();
+    // }, [])
+
+
 
     return (
         <div className='App'>
