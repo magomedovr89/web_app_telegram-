@@ -1,17 +1,16 @@
 import './App.css';
-// import {useEffect} from "react";
+import {useEffect} from "react";
 import {useTelegram} from "./hooks/useTelegram";
 import Header from "./components/Header/Header";
-import ProductItem from "./components/ProductItem/ProductItem";
 import ProductList from "./components/ProductList/ProductList";
 
 
 function App() {
-    const {onToogleButton} = useTelegram()
+    const {tg} = useTelegram()
 
-    // useEffect(() => {
-    //     tg.ready();
-    // }, [])
+    useEffect(() => {
+        tg.ready();
+    }, [])
 
 
     return (
