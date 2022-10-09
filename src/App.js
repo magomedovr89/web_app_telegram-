@@ -6,6 +6,7 @@ import ProductList from "./components/ProductList/ProductList";
 
 
 function App() {
+
     // const {tg} = useTelegram()
     //
     // useEffect(() => {
