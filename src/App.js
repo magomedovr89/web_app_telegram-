@@ -3,15 +3,10 @@ import './App.css';
 // import {useTelegram} from "./hooks/useTelegram";
 import Header from "./components/Header/Header";
 import ProductList from "./components/ProductList/ProductList";
+import Categories from "./components/Categories/Categories";
 
 const config = {
-    url: 'https://mapi.dodopizza.ru/api/v1/pizzeria?localityId=00000111-0000-0000-0000-000000000000',
-    headers: {
-        'User-Agent': 'PostmanRuntime/7.29.2',
-        'LanguageCode': 'ru',
-        'CountryCode': '643',
-        'ApiVersion': '1'
-    },}
+    url: 'https://mapi.dodopizza.ru/api/v1/pizzeria?localityId=00000111-0000-0000-0000-000000000000' }
 
 const onResponce = (res) => {
     return res.ok ? res.json() : Promise.reject(res)
@@ -44,6 +39,7 @@ function App() {
 
             <Header />
             <ProductList />
+            <Categories />
         </div>
     );
 }
